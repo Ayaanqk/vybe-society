@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VYBE - Events</title>
+    <title>Events - VYBE Creative Society</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,51 +16,69 @@
         <p>THE UNIVERSITY CREATIVE SOCIETY</p>
     </header>
 
-   <nav>
-  <a href="index.html">Home</a>
-  <a href="events.html">Events</a>
-  <a href="team.html">Team</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Team</a>
+    </nav>
 
     <section class="welcome">
-        <h2>Explore Our Events</h2>
-        <p>
-            VYBE brings creative students together through
-            workshops, competitions and exciting activities.
-            Discover what's happening in our society!
-        </p>
+        <h2>Upcoming Society Events</h2>
+        <p>Check out our detailed schedule of upcoming workshops, photowalks, and competitions for this semester.</p>
     </section>
 
-    <section class="activities">
-        <h2>Upcoming Events</h2>
+    <section class="events">
+        <h2>Semester Schedule</h2>
+        <table>
+            <tr>
+                <th>Event Name</th>
+                <th>Category</th>
+                <th>Date & Time</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Digital Painting Workshop</td>
+                <td>Art</td>
+                <td>10 Nov - 3:00 PM</td>
+                <td>Art Room</td>
+            </tr>
+            <tr>
+                <td>Autumn Photo Walk</td>
+                <td>Photography</td>
+                <td>15 Nov - 4:00 PM</td>
+                <td>Main Lawn</td>
+            </tr>
+            <tr>
+                <td>UI/UX Design Challenge</td>
+                <td>Design</td>
+                <td>20 Nov - 2:00 PM</td>
+                <td>Computer Lab 2</td>
+            </tr>
+            <tr>
+                <td>Creative Writers Meetup</td>
+                <td>Literature</td>
+                <td>25 Nov - 3:30 PM</td>
+                <td>Auditorium</td>
+            </tr>
+        </table>
+    </section>
 
-        <div class="cards">
-
-            <div class="card">
-                <h3>Art Workshop</h3>
-                <p>Explore your creativity and learn new artistic skills.</p>
-                <p><b>Date:</b> 10 November</p>
-            </div>
-
-            <div class="card">
-                <h3>Photography Walk</h3>
-                <p>Capture interesting moments around the university.</p>
-                <p><b>Date:</b> 15 November</p>
-            </div>
-
-            <div class="card">
-                <h3>Design Contest</h3>
-                <p>Show your talent and compete with other creative students.</p>
-                <p><b>Date:</b> 20 November</p>
-            </div>
-
-        </div>
+    <section class="join">
+        <h2>Register for an Event</h2>
+        <p>Click below to reserve your slot for any upcoming event!</p>
+        <button onclick="registerEvent()">REGISTER NOW</button>
     </section>
 
     <footer>
-        <p>VYBE University Creative Society</p>
-        <p>CREATE. CONNECT. INSPIRE.</p>
+        <p>&copy; 2026 VYBE Creative Society. All rights reserved.</p>
     </footer>
+
+    <script>
+        function registerEvent() {
+            window.alert("Registration confirmed! Check your student email for event details.");
+            console.log("Event registration button clicked!");
+        }
+    </script>
 
 </body>
 </html>
