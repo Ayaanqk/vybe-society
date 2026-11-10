@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VYBE - Join Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>VYBE</h1>
+        <p>CREATE. CONNECT. INSPIRE.</p>
+        <p>THE UNIVERSITY CREATIVE SOCIETY</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Our Team</a>
+        <a href="join.html">Join Us</a>
+    </nav>
+
+    <section class="welcome">
+        <h2>Become a Part of VYBE!</h2>
+
+        <p>
+            Do you love creativity, art, photography or design?
+            VYBE is the perfect place to explore your interests,
+            meet new people and develop your skills.
+        </p>
+    </section>
+
+    <section class="activities">
+        <h2>Why Join VYBE?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Learn</h3>
+                <p>Develop new skills through creative workshops.</p>
+            </div>
+
+            <div class="card">
+                <h3>Connect</h3>
+                <p>Meet students who share your interests.</p>
+            </div>
+
+            <div class="card">
+                <h3>Create</h3>
+                <p>Share your ideas and express your creativity.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="join">
+        <h2>Ready to Join?</h2>
+        <p>Take your first step towards becoming a VYBE member!</p>
+
+        <form onsubmit="joinSociety(event)">
+
+            <label for="studentName">Your Name:</label>
+            <br>
+            <input type="text" id="studentName" required>
+            <br><br>
+
+            <label for="studentEmail">Your Email:</label>
+            <br>
+            <input type="email" id="studentEmail" required>
+            <br><br>
+
+            <label for="interest">Your Interest:</label>
+            <br>
+            <select id="interest" required>
+                <option value="">Select an Interest</option>
+                <option value="Art">Art</option>
+                <option value="Photography">Photography</option>
+                <option value="Design">Design</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+
+            <button type="submit">JOIN VYBE</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>VYBE University Creative Society</p>
+        <p>CREATE. CONNECT. INSPIRE.</p>
+    </footer>
+
+    <script>
+        function joinSociety(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("studentName").value;
+
+            window.alert("Welcome to VYBE, " + name + "!");
+
+            console.log("A new student joined VYBE!");
+        }
+    </script>
+
+</body>
+</html>
