@@ -1,0 +1,165 @@
+
+/* MY WEBSITE DESIGN */
+
+body {
+    background-color: #FFF4E8;
+    color: #4B286D;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    background-color: #7045A5;
+    color: #FFF4E8;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+header p {
+    color: #FFC1DD;
+    font-size: 14px;
+}
+
+/* WELCOME SECTION */
+
+.welcome {
+    padding: 30px 20px;
+}
+
+h2 {
+    color: #7045A5;
+}
+
+.welcome img {
+    width: 80%;
+    max-width: 450px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.welcome p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* ACTIVITIES SECTION */
+
+.activities {
+    background-color: #FFC1DD;
+    padding: 30px 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background-color: #FFF4E8;
+    padding: 15px;
+    width: 200px;
+    border: 2px solid #7045A5;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #7045A5;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* EVENTS SECTION */
+
+.events {
+    padding: 30px 15px;
+}
+
+table {
+    width: 85%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #FFF4E8;
+}
+
+th, td {
+    border: 1px solid #7045A5;
+    padding: 12px;
+}
+
+th {
+    background-color: #7045A5;
+    color: #FFF4E8;
+}
+
+td {
+    color: #4B286D;
+}
+
+/* JOIN SECTION */
+
+.join {
+    background-color: #FFC1DD;
+    padding: 35px 20px;
+}
+
+button {
+    background-color: #7045A5;
+    color: #FFF4E8;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4B286D;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #7045A5;
+    color: #FFF4E8;
+    padding: 15px;
+}
+
+/* FOR SMALL SCREENS */
+
+@media screen and (max-width: 600px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .welcome img {
+        width: 100%;
+    }
+
+}
+

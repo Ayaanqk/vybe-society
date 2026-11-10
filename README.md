@@ -1,2 +1,0 @@
-# vybe-society
-
